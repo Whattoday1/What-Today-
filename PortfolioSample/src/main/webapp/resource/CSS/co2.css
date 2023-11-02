@@ -1,0 +1,746 @@
+/* 기본 스타일링 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#container {
+  width: 1200px;
+  margin: 0px auto;
+  height: 1000px;
+  font-weight: 600;
+  text-align: center; 
+}
+
+/* 네비게이션 바 스타일링 */
+.custom-navbar {
+  background-color: #ffffff;
+  height: 75px; /* 네비게이션 바의 높이를 조절 */
+  border-bottom: 3px solid  #b30909; /* 아래쪽 테두리 초기값 */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  font-size: 18px; /* 텍스트 크기 조절 */
+  text-align: center; 
+}
+
+
+
+/*마이페이지 카드*/
+#mypage-card {
+  display: none; /* 초기에는 숨겨진 상태*/
+  position: absolute; /* 위치를 절대 위치로 설정 */
+  top: 100%; /* 화면 아래에 위치 */
+  right: 30px;
+  width: 500px; 
+  height: 500px;
+  background-color: rgb(255, 255, 255); 
+  border: 2px solid #858484; 
+  z-index: 999; /* 다른 요소 위에 나타나도록 설정 */
+  transition: top 0.3s; /*애니메이션 효과 */
+}
+/* 푸터 스타일 */
+.custom-footer {
+  background-color: #b30909;
+  color: white; 
+  padding: 100px 0;
+  display: flex; 
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+}
+
+
+/* 컨텐츠 스타일 */
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+  color : black;
+}
+ul {
+  list-style: none;
+}
+
+/* 히든박스 */
+
+#movie_bar {
+  border: 3px solid #b8b5b5;
+  border-radius: 30px;
+  margin: auto;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  width: 760px;
+  height: 1500px;
+  padding: 15px;
+  position: absolute;
+  top: 100px;
+  left: 49.8%;
+  z-index: 10;
+  transform: translateX(-50%);
+  transition: transform 0.5s;
+  text-align: center;
+
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+#poster {
+  float : left;
+  width : 330px;
+  height : 430px;
+  background-color: rgb(150, 68, 68);
+  margin-left: 20px;
+  margin-top: 113px;
+}
+
+
+#movie_right{
+  padding-left : 15px;
+  width : 360px;
+  float : right;
+}
+
+
+#movie_name{
+  width : 325px;
+  height : 70px;
+  background-color: rgb(255, 255, 255);
+  color : rgb(0, 0, 0);
+  padding : 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #b30909;
+}
+
+
+#movie_score{
+  width : 325px;
+  height : 113px;
+  border: 2px solid #b30909;
+  padding : 5px;
+  border-radius: 10px;
+}
+
+.movie_score{
+	display : inline;
+
+  border-radius: 10px;
+}
+
+
+
+#movie_synop{
+  width : 325px;
+  height : 211px;
+  border: 2px solid #b30909;
+  padding : 15px;
+  border-radius: 10px;
+}
+
+
+#hidden_bar{
+  border-radius: 30px;
+  width : 610px;
+  height : 1500px;
+  padding : 30px;
+  position : absolute;
+  top : 100px;
+  left : 54.5%;
+  z-index : 0;
+  border: 3px solid #b8b5b5;
+  opacity: 0;
+  text-align: center;
+  background-color: rgb(247, 244, 244);
+}
+
+
+
+/* 리뷰 미리보기 창 */
+
+#movie_line{
+  width : 325px;
+  height : 150px;
+  background-color: white;
+  padding : 15px;
+  margin-top : 10px;
+  border : 2px solid #b30909;
+  border-radius: 10px;
+}
+
+
+#more_line{
+  color: white;
+  
+  background-color: #aca9a9;
+  cursor: pointer; /* 커서 모양을 손가락 모양으로 변경 */
+  width : 55px;
+  height : 12px;
+  padding : 3px;
+    margin-right: 0; 
+
+}
+
+#movie_line ul{
+  list-style : none;
+  padding-left : 7px;
+}
+
+
+#movie_line ul li{
+  margin-bottom: 10px;
+}
+
+
+
+/*한줄리뷰 미리보기(더보기)*/
+
+
+
+.review_preview_box{
+	border : none; 
+
+}
+
+.review_preview_box tr td{
+  line-height: 50px;
+}
+
+.review_preview_id{
+  width : 60px;
+  border-radius: 10px;
+}
+
+
+.review_preview_score{
+  width : 100px;
+}
+
+
+.review_preview_contents{
+  width : 150px;
+}
+
+
+#review_preview li{
+	margin-bottom : 5px;
+}
+
+
+.movie_sentence{
+  width : 480px;
+  height : 30px;
+  border : 2px solid #b30909;
+  border-radius: 10px;
+}
+
+
+.movie_sentence_star{
+  width : 480px;
+  height : 30px;
+
+}
+
+
+.movie_submit{
+  height : 30px;
+  width : 50px;
+  background-color: #aca9a9;
+  cursor: pointer; /* 커서 모양을 손가락 모양으로 변경 */
+  color: white;
+  border: none;
+}
+
+
+#exit{
+
+  float : right;
+
+  cursor: pointer; /* 커서 모양을 손가락 모양으로 변경 */
+  font-size : 20px;
+}
+
+
+#star_rating span {
+  cursor: pointer; /* 포인터 커서를 표시하여 별평을 클릭할 수 있도록 합니다. */
+  font-size: 24px; /* 별평의 크기 조정 */
+}
+
+#star_rating {
+  display: inline-block;
+  position : absolute; 
+  left : 230px; /*235*/
+  z-index:4;
+}
+
+#selected_rating {
+  display: inline-block; /* 선택된 별평을 가로로 표시하도록 설정합니다. */
+  font-size: 24px; /* 선택된 별평의 크기 조정 */
+  position : absolute;
+  top : 236px;
+  left : 230px; /*230*/
+  letter-spacing: 4px; 
+  z-index:3;
+}
+
+
+#graph_box{
+  background-color: white;
+  border : 1px solid;
+  border-radius: 10px;
+  width : 730px;
+  height: 180px;
+  top : 680px;
+  left : 0px;
+  position: relative;
+  border : 2px solid #b30909;
+}
+
+#left_graph{
+  padding : 20px;
+  border : silver solid 1px;
+  border-radius: 10px;
+  height : 120px;
+  width : 300px;
+ 
+}
+#right_graph{
+  padding : 20px;
+  border : silver solid 1px;
+  border-radius: 10px;
+  height : 120px;
+  width : 400px;
+}
+
+
+
+#store_box{
+  padding : 20px;
+  border : 2px solid #b30909;
+  border-radius: 10px;
+  width : 730px;
+  height: 150px;
+  top : 750px;
+  left : 0px;
+  position: relative;
+}
+
+
+
+/*컨텐츠찾기 페이지 */
+
+#contents_bar{
+  width : 1000px;
+  height : 2500px;
+  background-color: beige;
+  margin : auto;
+}
+
+#location_box{
+  margin : auto;
+  margin-top : 100px;
+  width : 850px;
+  height : 80px;
+  border : 1px solid navy;
+  border-radius: 10px;
+  font-size : 25px;
+  font-weight: bold;
+  padding : 23px;
+  padding-left : 50px;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#location_input {
+  width : 350px;
+  height : 38px;
+  padding-left : 30px;
+  font-size : 18px;
+  border : 3px rgb(70,70,70) solid;
+}
+
+#location_submit{
+  width : 70px;
+  height : 60xp;
+  padding : 3px;
+  font-size : 18px;
+  font-weight: bold;
+  border : 2px solid;
+  border-radius: 7px;
+  cursor: pointer; 
+}
+
+#date_bar{
+  display: flex; /* 부모 요소를 플렉스 컨테이너로 설정 */
+  align-items: center; /* 아이템을 수직 가운데 정렬 */
+  width : 1000px;
+  height : 200px;
+  background-color: lightblue;
+  margin : 50px 0px 50px 0px;
+  border-top : double 4px whitesmoke;
+  border-bottom : double 4px whitesmoke;
+  padding-top : 20px;
+  padding-left : 30px;
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  transition: transform 0.3s ease; /* 슬라이딩 효과 애니메이션 */
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  justify-content: space-between;
+}
+
+.date_box{
+  width : 400px;
+  height : 150px;
+  background-color: white;
+  display : inline;
+  margin-right : 15px;
+  border-radius: 10px;
+  padding : 15px;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.3s ease; /* 슬라이딩 효과 애니메이션 */
+  cursor: pointer;  /*손가락커서되는 속성*/
+}
+
+
+.date_box.clicked{
+  height : 160px;
+  border : 5px solid rgb(50,50,150);
+}
+
+
+.date_box_container_wrapper {
+  width: 82%; /* date_bar의 너비의 80%로 설정 */
+  overflow: hidden; /* 넘치는 내용 숨기기 */
+  margin : auto;
+  margin-bottom: 20px;
+}
+
+
+.date_box_container {
+  display: flex;
+  transition: transform 0.3s ease; /* 슬라이딩 효과 애니메이션 */
+}
+
+
+/* 화살표 버튼 스타일 */
+#prev_button, #next_button {
+  flex: 0 0 auto;
+
+  transform: translateY(-50%); /* 수직 정렬을 위해 사용 */
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100; /* 다른 요소 위에 표시되도록 설정 */
+  border-radius: 50%;
+  
+  color : rgb(0,0,0);
+  width : 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 0px; /* 텍스트 수직 가운데 정렬 */
+  margin : auto;
+  font-size : 40px;
+  padding : 0px;
+  opacity: 0.7;
+  margin-top : 65px;
+  margin-right : 25px;
+}
+
+#prev_button {
+  left: 470px;
+}
+
+#next_button {
+  right: 470px;
+}
+
+
+
+#contents_selection_box{
+  margin : auto;
+  text-align: center;
+  cursor: pointer;  /*손가락커서되는 속성*/
+}
+
+
+.contents_selection{
+  display : inline-block;
+  font-size : 19px;
+  border : 10px black;
+  padding : 0px;
+  background-color: rgb(50,50,150);
+  width : 130px;
+  height : 50px;
+  margin : 0px;
+  color : white;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0 ;
+  letter-spacing: 15px;
+  padding-left : 15px;
+  padding-top : 15px;
+}
+
+
+#contents_list_box{
+  background-color: #0CC1F0;
+  height: 850px;
+  width : 900px;
+  margin : auto;
+  padding-top : 70px;
+  padding-left : 20px;
+  overflow-y: scroll; /* 세로 스크롤바만 표시합니다 */
+  overflow-x: hidden; /* 가로 스크롤바는 숨깁니다 */
+  border : 1px solid silver;
+}
+
+
+.contents_name{
+  background-color: azure;
+  width : 200px;
+  height : 40px;
+  text-align: center;
+  letter-spacing: 18px;
+  font-size : 18px;
+  font-weight: bold;
+  padding : 7px;
+  padding-left :20px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.contents_box{
+  width : 840px;
+  height : auto;
+  background-color: antiquewhite;
+  margin-bottom : 50px;
+  padding: 40px;
+  display: flex; /* Flexbox 레이아웃을 사용합니다 */
+  flex-wrap: wrap; /* 요소가 넘칠 때 줄바꿈합니다 */
+  justify-content: space-between; /* 각 요소를 왼쪽, 가운데, 오른쪽에 배치합니다 */
+  border-radius: 0 3px 3px 3px;
+}
+
+
+.single_contents{
+  display : inline-block;
+  width : 202px;
+  height : 500px;
+  background-color: yellow;
+  border : 2px solid silver;
+  border-radius: 5px;
+  margin-bottom : 50px;
+}
+
+.single_contents_poster{
+  width : 198px;
+  height : 420px;
+  background-color: white;
+}
+
+.single_contents_info{
+  width : 199px;
+  height : 75px;
+  background-color: rgb(51, 76, 116);
+  text-align: center;
+  color : white;
+  margin-top : 1px;
+  padding : 5px;
+}
+
+
+/* 비관람컨텐츠*/
+
+
+.playground{
+  display : flex;
+  padding : 30px;
+  justify-content: space-between;
+  margin-top : 50px;
+  margin-bottom : 50px;
+}
+
+
+.playground_contents{
+  display : row;
+  width : 280px;
+  height : 180px;
+  background-color: rgb(100,50,50);
+  border-radius: 8px;
+  padding : 11px;
+  color : white;
+  font-size : 14px;
+  font-weight: bold;
+}
+
+.playground_contents img{
+  margin-bottom : 8px;
+  border : 1px solid rgb(50,50,50);
+}
+
+
+
+
+#playground_box{
+  border : 1px solid white;
+  border-radius: 2px;
+  color : white;
+  float : right;
+  font-size : 11px;
+  padding : 2px;
+}
+
+
+#location_relative{
+  width :950px;
+  height: 200px;
+  background-color: rgb(50,100,50);
+  border-radius: 10px;
+  margin : auto;
+  margin-top : 100px;
+}
+
+
+
+
+
+
+
+/*리뷰테이블박스 연습 */
+
+
+.review_total_box li{
+  margin : 0px;
+  padding : 0px;
+}
+
+
+
+
+.review_box{
+	width : 485px;
+	margin-left : 0px;
+  border-collapse: collapse; /* 테이블 셀 경계를 병합 */
+  border : 2px solid #b30909;
+  text-align : left;
+
+}
+
+
+.review_box a{
+	color : black;
+	text-decoration : none;
+}
+
+
+
+
+.review_box tr{
+  height : 80px;
+  width : 525px;
+  text-align: left;
+  padding : 5px;
+  line-height : 15px;
+  text-align : left;
+}
+
+
+
+.review_box tr td{
+  border : none;
+  text-align :left;
+  padding-left : 18px;
+}
+
+
+
+.review_box .review_upper {
+  text-align: left;
+  height: 60px;
+  padding: 5px;
+  line-height: 15px;
+}
+
+
+
+.review_upper_id{
+  width : 18%;
+}
+
+.review_upper_score{
+  width : 22%;
+  padding-left : 1px;
+}
+
+
+.review_upper_date{
+  width : 20%;
+  padding-left : 1px;
+}
+
+.review_upper_alert{
+  width : 15%;
+  padding : 1px;
+  margin : auto;
+  
+}
+
+
+.rec_score{
+  width : 15%;
+  height : 20px;
+  padding : 3px;
+  font-size : 18px;
+}
+
+.review_bottom{
+  border: none;
+}
+.review_upper{
+  border: none;
+}
+
+
+.review_bottom_content{
+  width : 85%;
+  line-height: 30px;
+ 
+  padding-right : 20px;
+}
+
+
+.review_bottom_rec{
+  width :15%;
+  text-align: left;
+  padding-right: 0px;
+}
+
+
+.review_bottom_rec img{
+  width : 18px;
+  height : 18px;
+}
+
+.rec_score{
+  font-size : 15px;
+}
+
+
+
+/*리뷰페이지 넘김버튼*/
+
+
+
+#pagination button{
+	border: none;
+	margin-right : 10px;
+	margin-left : 10px;
+}
+
+
+

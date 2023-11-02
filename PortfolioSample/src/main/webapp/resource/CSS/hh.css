@@ -1,0 +1,252 @@
+/* 기본 스타일링 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#container {
+  min-width: 1250px;
+  margin: 0px auto;
+  height: auto;
+  font-weight: 600;
+  text-align: center; 
+  background-color: #ecebeb;
+}
+
+#blank{
+  background-color: #ecebeb;
+}
+
+/* 네비게이션 바 스타일링 */
+.custom-navbar {
+  background-color: #ffffff;
+  height: 70px; /* 네비게이션 바의 높이를 조절합니다. */
+  border-bottom: 3px solid  #b30909; /* 아래쪽 테두리 초기값 */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: rgb(0, 0, 0) !important;
+  font-size: 18px; /* 텍스트 크기 조절 */
+  text-align: center; 
+}
+
+
+
+/*마이페이지 카드*/
+#mypage-card {
+  display: none; /* 초기에는 숨겨진 상태*/
+  position: absolute; /* 위치를 절대 위치로 설정 */
+  top: 100%; /* 화면 아래에 위치 */
+  right: 30px;
+  width: 500px; 
+  height: 500px;
+  background-color: rgb(255, 255, 255); 
+  border: 2px solid #858484; 
+  z-index: 999; /* 다른 요소 위에 나타나도록 설정 */
+  transition: top 0.3s; /*애니메이션 효과 */
+}
+
+
+/* 회원가입폼 컨테이너 스타일 */
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #858484; 
+}
+
+/* 라벨 스타일 */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 입력 필드 스타일 */
+input[type="text"],
+input[type="password"]
+input[type="date"],
+select {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+select.email {
+  width: 150px;
+}
+
+/* 중복 체크 버튼 스타일 */
+input[type="button"] {
+  background-color: #b30909;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* 등록 버튼 스타일 */
+button[type="submit"] {
+  background-color: #b30909;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* 로그인 폼 스타일 */
+.form-container1 {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #858484;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container1 table {
+  width: 100%;
+}
+
+.form-container1 td {
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/* 회원정보 수정 폼 스타일 */
+
+.form-container2 {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #858484;
+  text-align: center;
+}
+
+/* 테이블을 가운데 정렬 */
+.form-container2 table {
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+}
+
+/* 테이블 내부의 셀 내용을 가운데 정렬 */
+.form-container2 table td {
+  text-align: center;
+}
+
+/* 텍스트 셀의 내용을 가운데 정렬 */
+.form-container2 table td b {
+
+  text-align: center;
+}
+
+
+
+/* 제출 및 리셋 버튼의 스타일 */
+.form-container2 input[type="submit"],
+.form-container2 input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #b30909;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 마우스 호버 시 제출 버튼의 스타일 */
+.form-container2 input[type="submit"]:hover {
+  background-color: #8e8e8f;
+}
+
+/* 마우스 호버 시 리셋 버튼의 스타일 */
+.form-container2 input[type="reset"]:hover {
+  background-color: #8e8e8f;
+}
+/* 폼 버튼을 가운데 정렬 */
+.form-container2 form table tr:last-child td {
+  text-align: center;
+  display: flex;
+  
+}
+
+
+/* 푸터 영역 전체 스타일 설정 */
+.custom-footer {
+  display: flex; 
+  flex-wrap: wrap; 
+  background-color: #b30909;
+  color: #fff; 
+  padding: 20px;
+}
+
+/* 목록 항목 스타일 설정 */
+.policy_list {
+  list-style: none;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.policy_list li {
+  margin-right: 20px;
+  margin-bottom: 10px; /* 아래로 공간 추가 */
+}
+
+.policy_list li strong {
+  font-weight: bold; /* "개인정보처리방침" 텍스트를 굵게 표시 */
+}
+
+/* 회사 정보 섹션 스타일 설정 */
+.company_info_wrap {
+  flex: 1; 
+  text-align: left;
+  margin-top: 20px; /* 상단 간격 추가 */
+}
+
+/* 회사 정보 내의 요소 스타일 설정 */
+.company_info dl {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.company_info dl dt,
+.company_info dl dd {
+  flex: 0 0 50%; 
+}
+
+/* 저작권 텍스트 스타일 설정 */
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+

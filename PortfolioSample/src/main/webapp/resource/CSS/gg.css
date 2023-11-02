@@ -1,0 +1,191 @@
+/* 기본 스타일링 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#container {
+  min-width: 1250px;
+  margin: 0px auto;
+  height: 1000px;
+  font-weight: 600;
+  text-align: center; 
+}
+
+/* 네비게이션 바 스타일링 */
+.custom-navbar {
+  background-color: #ffffff;
+  height: 70px; /* 네비게이션 바의 높이를 조절합니다. */
+  border-bottom: 3px solid  #b30909; /* 아래쪽 테두리 초기값 */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color:#3c3c3c !important;
+  font-size: 18px; /* 텍스트 크기 조절 */
+  text-align: center; 
+}
+
+/* 이미지 크기 조절 */
+.custom-navbar img {
+  width: 30px; /* 이미지 너비 조절 */
+  height: 30px; /* 이미지 높이 조절 */
+  
+}
+
+/*마이페이지 카드*/
+#mypage-card {
+  display: none; /* 초기에는 숨겨진 상태*/
+  position: absolute; /* 위치를 절대 위치로 설정 */
+  top: 100%; /* 화면 아래에 위치 */
+  right: 30px;
+  width: 500px; 
+  height: 500px;
+  background-color: rgb(255, 255, 255); 
+  border: 2px solid #858484; 
+  z-index: 999; /* 다른 요소 위에 나타나도록 설정 */
+  transition: top 0.3s; /*애니메이션 효과 */
+}
+/* 푸터 스타일 */
+.custom-footer {
+  background-color: #b30909;
+  color: white; 
+  padding: 100px 0; /* 위아래 패딩 설정 */
+  margin-top: 50px;
+}
+
+.custom-footer p {
+  margin: 0; /* 기본 마진 제거 */
+}
+
+/* 푸터 텍스트 스타일 */
+.custom-footer p {
+  font-size: 14px;
+}
+
+
+/* 메뉴 스타일링 */
+#menu {
+  float: left;
+  width: 200px;
+  background-color: #ffffff;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+/* 메뉴 항목 스타일 */
+a:hover {
+  background-color: #ddd;
+}
+
+#content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+
+
+
+/* 공지사항 게시판스타일 */
+
+
+/* board_box 섹션에 대한 스타일 */
+.board_box {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.board_box table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; /* 세로줄을 없애기 위한 설정 */
+}
+
+.board_box th,
+.board_box td {
+  border-top: none; /* 세로줄을 없애기 */
+  border-bottom: 1px solid #ddd; /* 가로줄을 유지 */
+  padding: 5px;
+  text-align: center;
+}
+
+.board_box th {
+  background-color: #b30909;
+  color: #fff;
+}
+
+.board_box a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn_box button {
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #b30909;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+/* 기본 목록 스타일 */
+.terms_bx ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* 항목들을 강제로 같은 행에 두도록 설정 */
+}
+
+.terms_bx ul li {
+  width: 33.33%; /* 세 줄씩 나오도록 폭 조절 */
+  float: left;
+  padding: 10px;
+ 
+}
+
+/* 마지막 항목의 오른쪽 선 제거 */
+.terms_bx ul li:last-child {
+  border-right: none;
+}
+
+/* 목록 항목 스타일 */
+.terms_bx ul li strong {
+  display: block;
+  font-weight: bold;
+}
+/* 목록 내용 스타일 */
+#terms {
+  background-color: white;
+  border: 2px solid #b30909;
+  border-radius: 10px;
+  width: 600px;
+  height: 600px;
+}
+
+
+
